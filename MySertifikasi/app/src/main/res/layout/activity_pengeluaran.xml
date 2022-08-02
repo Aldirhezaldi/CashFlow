@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu"
+    tools:context=".PengeluaranActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_relative_login"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tambah_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Tambah Pengeluaran"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_relative_login"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txt_tanggal_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tanggal : "/>
+
+    <EditText
+        android:id="@+id/date_pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tanggal_pengeluaran"
+        android:drawableEnd="@drawable/ic_date_range"
+        android:drawableRight="@drawable/ic_date_range"
+        android:focusable="false"
+        android:hint="Date"/>
+
+    <TextView
+        android:id="@+id/txt_nominal_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/date_pengeluaran"
+        android:text="Nominal : "/>
+
+    <EditText
+        android:id="@+id/nominal_pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_nominal_pengeluaran"/>
+
+    <TextView
+        android:id="@+id/txt_keterangan_pengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/nominal_pengeluaran"
+        android:text="Keterangan : "/>
+
+    <EditText
+        android:id="@+id/keterangan_pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_keterangan_pengeluaran"/>
+
+    <Button
+        android:id="@+id/btn_simpan_pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/keterangan_pengeluaran"
+        android:background="@drawable/btn_login"
+        android:layout_marginTop="30dp"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/btn_back_pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_simpan_pengeluaran"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_register"
+        android:textColor="@color/white"
+        android:text="Kembali" />
+    </RelativeLayout>
+</RelativeLayout>

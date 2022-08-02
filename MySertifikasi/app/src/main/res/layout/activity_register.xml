@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:context=".Register">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_relative_login"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"/>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_username"
+        android:layout_marginTop="29dp"
+        android:inputType="textPassword"
+        android:hint="Paswword"
+        android:drawableLeft="@drawable/ic_baseline_info_24"/>
+
+    <Button
+        android:id="@+id/reg_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/reg_password"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/btn_login"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/reg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_register"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_register"
+        android:layout_marginTop="30dp"
+        android:text="Kembali"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_relative_login"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:hint="Paswword"
+            android:textColor="@color/white"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:background="@drawable/btn_login"
+            android:layout_margin="22dp"
+            android:layout_marginTop="50dp"
+            android:text="Login" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_register"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/btn_login"-->
+<!--            android:layout_margin="22dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/btn_register"-->
+<!--            android:text="Register" />-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="195dp"
+            app:srcCompat="@drawable/logo" />
+
+    </RelativeLayout>
+</RelativeLayout>
